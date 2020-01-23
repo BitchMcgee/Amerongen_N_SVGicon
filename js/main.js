@@ -8,7 +8,8 @@
 // find the elements in the document
 let toggleButton = document.querySelector(".switch-text"),
   myHeading = document.querySelector('h1'),
-  svgImg = document.querySelector("#badge");
+//svgImg = document.querySelector("#badge"),
+  allSVGS = document.querySelectorAll(".svg");
 // this function should change the heading text
 function changeText() {
   myHeading.textContent = "What is up? I am script!";
@@ -17,9 +18,10 @@ function changeText() {
 function logSVG() {
   console.log(this.id);
 }
-
+// things a user can do t make stuff happen on the page
 toggleButton.addEventListener("click", changeText);
-svgImg.addEventListener("mouseover", logSVG);
-
+//svgImg.addEventListener("click", logSVG);
+//svgImg2.addEventListener("click", logSVG);
+allSVGS.forEach(item=> item.addEventListener("click", logSVG));
 // document.querySelector('h1').textContent = "What is up? I am script!"
 })();

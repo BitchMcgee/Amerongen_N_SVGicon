@@ -11,6 +11,8 @@ h1
   text-align: center;
   font-size: 20px;
 }
+.caption
+{display: block;}
 .Setup
 {
   display: flex;
@@ -25,7 +27,6 @@ h1
   box-shadow: 0 1px 4px rgba(0,0,0,.5);
   text-shadow: 1px 1px 1px rgba(0,0,0,.5);
 }
-.Setup:focus {background-color: black;}
 .mage
 {
   display: flex;
@@ -45,8 +46,8 @@ h1
 }
 .wizard
 {
-  height: 800px;
-  width: 800px;
+  height: 500px;
+  width: 500px;
   /*border: solid 1px #0093C9;
   background: rgb(169,228,247); /* Old browsers */
   /*background: -moz-linear-gradient(top,  rgba(169,228,247,1) 24%, rgba(169,228,247,1) 28%, rgba(15,180,231,1) 58%); /* FF3.6-15 */
@@ -72,8 +73,8 @@ h1
 }
 .war
 {
-  height: 800px;
-  width: 800px;
+  height: 500px;
+  width: 500px;
 }
 .war:focus
 {
@@ -88,8 +89,8 @@ h1
 }
 .bard
 {
-  height: 800px;
-  width: 800px;
+  height: 600px;
+  width: 600px;
 }
 .bard:hover
 {
@@ -107,8 +108,8 @@ h1
 }
 .archer
 {
-  height: 800px;
-  width: 800px;
+  height: 600px;
+  width: 600px;
 }
 .archer:hover
 {

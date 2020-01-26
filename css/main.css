@@ -12,7 +12,15 @@ h1
   font-size: 20px;
 }
 .caption
-{display: block;}
+{
+  display: block;
+  text-align: center;
+  /*justify-content: space-evenly;*/
+  /*display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;*/
+}
+
 .Setup
 {
   display: flex;
@@ -21,16 +29,34 @@ h1
   color: black;
   cursor: pointer;
   border-radius: 5px;
-
   /* The box-shadow property allows designers to easily imjplement multiple drop shadows  (outer or innner) on box elements, specifying values for horz, vert offset, third is blur*/
   /*horz offset, vert offset, third is blur*/
   box-shadow: 0 1px 4px rgba(0,0,0,.5);
   text-shadow: 1px 1px 1px rgba(0,0,0,.5);
 }
+/*COLUMN SETUP*/
+.helm
+{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.cuirass
+{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.weapon
+{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+/*END COLUMN SETUP*/
 .mage
 {
   display: flex;
-  flex-direction: row;
   /*height: 800px;
   width: 800px;*/
 }
@@ -89,8 +115,10 @@ h1
 }
 .bard
 {
-  height: 600px;
-  width: 600px;
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-direction: row;
 }
 .bard:hover
 {
@@ -108,8 +136,9 @@ h1
 }
 .archer
 {
-  height: 600px;
-  width: 600px;
+  height: 500px;
+  width: 500px;
+  display: inline-block;
 }
 .archer:hover
 {
